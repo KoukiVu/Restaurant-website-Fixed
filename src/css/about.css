@@ -1,0 +1,42 @@
+/* ABOUT SECTION */
+
+
+.About {
+    text-align: center; 
+    font-size: 4rem;
+    margin-top: 2%;
+}
+
+.aboutElement {
+    width:60%;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 4% auto;
+  
+}
+  
+  
+.imageAbout1 {
+    width: 25%;
+    margin: auto;
+    border: 4px solid black;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.imageAbout2 {
+    width: 25%;
+    border: 4px solid black;
+    display:block;
+    margin-left: auto;
+    margin-top: -430px;
+}
+  
+.imageAbout3 {
+    width: 25%;
+    border: 4px solid black;
+    display:block;
+    margin-right: auto;
+    margin-top: -420px;
+}
