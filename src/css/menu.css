@@ -7,55 +7,60 @@
 }
 
 .RamenTitle {
-    margin-left: 2rem;
+    margin-left: 2.2rem;
 }
 
 .SmallPlatesTitle {
-    margin-top: -38rem;
-    margin-left: 2rem;
+    margin-top: 5rem;
+    margin-left: 2.2rem;
 }
 
 /* RAMEN */
-.menuRamen1 {
-    width: 15%;
-    margin: 2rem;
-    border: 4px solid black;
-    display:block;
+
+.misoRamen {
+    width: 18rem;
+    border: 2px solid black;
+    margin-left: 2rem;
 }
 
-.menuRamen2 {
-    width: 15%;
-    margin: 21rem;
-    border: 4px solid black;
-    margin-top: -17.8rem;
-    
+.shioRamen {
+    width: 18rem;
+    margin-left: 22rem;
+    margin-top: -25.5rem;
+    border: 2px solid black;
 }
 
-.menuRamen3 {
-    width: 15%;
-    margin: 40rem;
-    border: 4px solid black;
-    margin-top: -36.8rem;
+.spicyChickenRamen {
+    width: 18rem;
+    margin-left: 42rem;
+    margin-top: -25.5rem;
+    border: 2px solid black;
 }
+
+.Flavour {
+    text-align: center;
+}
+
+
 
 /* SMALL PLATES */
-.menuEdamame {
-    width: 15%;
-    margin: 2rem;
-    border: 4px solid black;
-    margin-top: 2rem;
+
+.edamame {
+    width: 18rem;
+    border: 2px solid black;
+    margin-left: 2rem;
 }
 
-.menuSalmon {
-    width: 15%;
-    margin: 1rem;
-    border: 4px solid black;
-    margin-top: 1rem;
+.salmon {
+    width: 18rem;
+    border: 2px solid black;
+    margin-left: 22rem;
+    margin-top: -25.5rem;
 }
 
-.menuSteamedBuns {
-    width: 15%;
-    margin: 2.3rem;
-    border: 4px solid black;
-    margin-top: 2.1rem;
+.buns {
+    width: 18rem;
+    border: 2px solid black;
+    margin-left: 42rem;
+    margin-top: -25.5rem;
 }
