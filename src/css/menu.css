@@ -25,14 +25,28 @@
 
 .shioRamen {
     width: 18rem;
-    margin-left: 22rem;
+    margin-left: 23rem;
     margin-top: -25.5rem;
     border: 2px solid black;
 }
 
 .spicyChickenRamen {
     width: 18rem;
-    margin-left: 42rem;
+    margin-left: 43.6rem;
+    margin-top: -25.5rem;
+    border: 2px solid black;
+}
+
+.spicyTonkotsuRamen {
+    width: 18rem;
+    margin-left: 64.5rem;
+    margin-top: -25.5rem;
+    border: 2px solid black;
+}
+
+.wontonChickenRamen {
+    width: 18rem;
+    margin-left: 85.6rem;
     margin-top: -25.5rem;
     border: 2px solid black;
 }
@@ -54,13 +68,27 @@
 .salmon {
     width: 18rem;
     border: 2px solid black;
-    margin-left: 22rem;
+    margin-left: 23rem;
     margin-top: -25.5rem;
 }
 
 .buns {
     width: 18rem;
     border: 2px solid black;
-    margin-left: 42rem;
+    margin-left: 43.6rem;
+    margin-top: -25.5rem;
+}
+
+.gyoza {
+    width: 18rem;
+    border: 2px solid black;
+    margin-left: 64.5rem;
+    margin-top: -25.5rem;
+}
+
+.takoyaki {
+    width: 18rem;
+    border: 2px solid black;
+    margin-left: 85.6rem;
     margin-top: -25.5rem;
 }

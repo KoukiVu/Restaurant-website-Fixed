@@ -1,5 +1,7 @@
 import React from "react";
 import '../css/home.css';
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
+
 
 export default function home() {
     return (
@@ -8,6 +10,9 @@ export default function home() {
       <div>
        <h1 className="Name">NANA RAMEN</h1>
        <button class="onlineOrd">Order Online</button>
+       <Link to="/order" className="onlineOrd">Order Online</Link>
+
+       
       </div>
 
       <hr className="section"></hr>

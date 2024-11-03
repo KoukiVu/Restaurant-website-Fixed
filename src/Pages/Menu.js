@@ -11,6 +11,8 @@ return(
   <link rel="stylesheet" href="menu.css"></link>
 </head>
      <h1 className="Menu">Menu</h1>
+
+     {/* RAMEN MENU */}
 <div>
      <h2 className="RamenTitle">Ramen</h2>
       {/* Miso Ramen */}
@@ -39,9 +41,30 @@ return(
                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                </div>
      </div>
+
+     {/* Spicy Tonkotsu Ramen */}
+     <div class="spicyTonkotsuRamen" >
+       <img src="/Restaurant-src/MenuRamen4.jpg" class="card-img-top" alt="..."></img>
+               <div class="Flavour">
+               <h5>Spicy Tonkotsu Ramen</h5>
+               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               </div>
+     </div>
+
+     {/* Wonton Chicken Ramen */}
+     <div class="wontonChickenRamen" >
+       <img src="/Restaurant-src/MenuRamen5.jpg" class="card-img-top" alt="..."></img>
+               <div class="Flavour">
+               <h5>Wonton Chicken Ramen</h5>
+               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               </div>
+     </div>
+     
      
 </div>
 
+
+{/* SMALL PLATES MENU */}
 <div>
      <h2 className="SmallPlatesTitle">Small Plates</h2>
       {/* Edamame */}
@@ -67,6 +90,24 @@ return(
        <img src="/Restaurant-src/MenuSteamedBuns.jpg" class="card-img-top" alt="..."></img>
                <div class="Flavour">
                <h5>Steamed Buns</h5>
+               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               </div>
+     </div>
+
+     {/* Gyoza */}
+     <div class="gyoza" >
+       <img src="/Restaurant-src/MenuGyoza.jpg" class="card-img-top" alt="..."></img>
+               <div class="Flavour">
+               <h5>Gyoza</h5>
+               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               </div>
+     </div>
+
+     {/* Takoyaki */}
+     <div class="takoyaki" >
+       <img src="/Restaurant-src/MenuTakoyaki.jpg" class="card-img-top" alt="..."></img>
+               <div class="Flavour">
+               <h5>Takoyaki</h5>
                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                </div>
      </div>
