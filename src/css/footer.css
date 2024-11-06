@@ -1,0 +1,26 @@
+.main-footer {
+color: white;
+background-color: rgb(43, 41, 41);
+width: 100%;
+padding-top: 3rem;
+padding-bottom: 1rem;
+margin-top: 10rem;
+min-height: 40vh;
+
+display: flex;
+flex:1
+}
+
+.bottomPart {
+    text-align: center;
+}
+
+.location {
+    text-align: center;
+   font-size: 2rem;
+}
+
+.storeHours {
+    text-align: center;
+   font-size: 2rem;
+}

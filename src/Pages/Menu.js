@@ -20,7 +20,7 @@ return(
             <img src="/Restaurant-src/MenuRamen1.jpg" class="card-img-top" alt="..."></img>
               <div class="Flavour">
                <h5>Miso Ramen</h5>
-               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <p>Ramen cooked with miso broth, fresh vegetables, Bok Choy, Chashu Pork, Nitamago(Egg) </p>
                </div>
      </div>
 
@@ -29,7 +29,7 @@ return(
        <img src="/Restaurant-src/MenuRamen2.jpg" class="card-img-top" alt="..."></img>
                <div class="Flavour">
                <h5>Shio Ramen</h5>
-               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <p>Delicated and light flavour of Shio, top with variety of vegetables and Chashu Pork</p>
                </div>
      </div>
 
@@ -38,7 +38,7 @@ return(
        <img src="/Restaurant-src/MenuRamen3.jpg" class="card-img-top" alt="..."></img>
                <div class="Flavour">
                <h5>Spicy Chicken Ramen</h5>
-               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <p>Rich and spicy broth, top with tender pieces of seasoned chicken and vegetables</p>
                </div>
      </div>
 
@@ -47,7 +47,7 @@ return(
        <img src="/Restaurant-src/MenuRamen4.jpg" class="card-img-top" alt="..."></img>
                <div class="Flavour">
                <h5>Spicy Tonkotsu Ramen</h5>
-               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <p>Classic, Tonkotsu Ramen cooked with pork bone broth with Chasu Pork and vegetables</p>
                </div>
      </div>
 
@@ -56,7 +56,7 @@ return(
        <img src="/Restaurant-src/MenuRamen5.jpg" class="card-img-top" alt="..."></img>
                <div class="Flavour">
                <h5>Wonton Chicken Ramen</h5>
-               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <p>Chicken broth with delicate chicken-filled wonton, topped with vegetables mushrooms</p>
                </div>
      </div>
      
@@ -72,7 +72,7 @@ return(
        <img src="/Restaurant-src/MenuEdamame.jpg" class="card-img-top" alt="..."></img>
                <div class="Flavour">
                <h5>Edamame</h5>
-               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <p className="edamameDescription">Lightly salted and boiled soybeans</p>
                </div>
      </div>
      
@@ -81,7 +81,7 @@ return(
        <img src="/Restaurant-src/MenuSalmon.jpg" class="card-img-top" alt="..."></img>
                <div class="Flavour">
                <h5>Salmon</h5>
-               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <p className="salmonDescription">Fresh salmon with soysauce fused with Jalapeno</p>
                </div>
      </div>
 
@@ -90,7 +90,7 @@ return(
        <img src="/Restaurant-src/MenuSteamedBuns.jpg" class="card-img-top" alt="..."></img>
                <div class="Flavour">
                <h5>Steamed Buns</h5>
-               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <p className="bunsDescription">Soft, fluffy steamed buns filled with tender pork cooked with soy sauce</p>
                </div>
      </div>
 
@@ -99,7 +99,7 @@ return(
        <img src="/Restaurant-src/MenuGyoza.jpg" class="card-img-top" alt="..."></img>
                <div class="Flavour">
                <h5>Gyoza</h5>
-               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <p className="gyozaDescription">Crispy, juicy savory Japanese gyoza</p>
                </div>
      </div>
 
@@ -108,7 +108,7 @@ return(
        <img src="/Restaurant-src/MenuTakoyaki.jpg" class="card-img-top" alt="..."></img>
                <div class="Flavour">
                <h5>Takoyaki</h5>
-               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <p className="takoyakiDescription">Golden and bite-sized balls filled with tender pieces of octopus</p>
                </div>
      </div>
 

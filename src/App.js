@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import './App.css';
 import axios from 'axios';
 import NavBar from "./NavBar"
+import Footer from "./Footer"
 import About from './Pages/About'
 import Menu from './Pages/Menu'
 import Home from './Pages/Home'
-import Order from './OnlineOrder/Order'
+import Order from './OnlineOrder/OrderMenu'
 import { Route, Routes } from "react-router-dom"
 
 function App() {
@@ -48,14 +49,20 @@ function App() {
  <div>
       <>
       <NavBar />
-      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Menu" element={<Menu />} />
-        <Route path="/Order" element={<Order />} />
+        
+      </Routes>
+
+      <Routes>
+          <Route path="/OrderMenu" element={<Order />} />
       </Routes>
       </>
+
+      <Footer />
+
  
 {/* <div>
       <form className="row g-3" onSubmit={handleSubmit}>

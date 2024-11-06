@@ -1,109 +1,125 @@
-/* MENU SECTION */
-
-.Menu {
+.Order {
     text-align: center; 
     font-size: 4rem;
     margin-top: 2%;
 }
 
-.RamenTitle {
-    margin-left: 2.2rem;
-}
-
-.SmallPlatesTitle {
-    margin-top: 5rem;
-    margin-left: 2.2rem;
+.container {
+    width: 100%;
+    height: 100%;
 }
 
 /* RAMEN */
 
-.misoRamen {
+.misoRamenOrder {
     width: 18rem;
     border: 2px solid black;
     margin-left: 2rem;
 }
 
-.shioRamen {
+.shioRamenOrder {
     width: 18rem;
     margin-left: 23rem;
-    margin-top: -25.5rem;
+    margin-top: -30.13rem;
     border: 2px solid black;
 }
 
-.spicyChickenRamen {
+.spicyChickenRamenOrder {
     width: 18rem;
     margin-left: 43.6rem;
-    margin-top: -25.5rem;
+    margin-top: -30.13rem;
     border: 2px solid black;
 }
 
-.spicyTonkotsuRamen {
+.spicyTonkotsuRamenOrder {
     width: 18rem;
     margin-left: 64.5rem;
-    margin-top: -25.5rem;
+    margin-top: -30.13rem;
     border: 2px solid black;
 }
 
-.wontonChickenRamen {
+.wontonChickenRamenOrder {
     width: 18rem;
     margin-left: 85.6rem;
-    margin-top: -25.5rem;
+    margin-top: -30.13rem;
     border: 2px solid black;
 }
-
-.Flavour {
-    text-align: center;
-}
-
-
 
 /* SMALL PLATES */
 
-.edamame {
+.edamameOrder {
     width: 18rem;
     border: 2px solid black;
     margin-left: 2rem;
 }
-.edamameDescription {
+.edamameDescriptionOrder {
     height: 4.5rem;
+
 }
 
-.salmon {
+.salmonOrder {
     width: 18rem;
     border: 2px solid black;
     margin-left: 23rem;
-    margin-top: -25.5rem;
+    margin-top: -30.13rem;
 }
-.salmonDescription {
+.salmonDescriptionOrder {
     height: 4.5rem;
 }
 
-.buns {
+.bunsOrder {
     width: 18rem;
     border: 2px solid black;
     margin-left: 43.6rem;
-    margin-top: -25.5rem;
+    margin-top: -30.13rem;
 }
-.bunsDescription {
+.bunsDescriptionOrder {
     height: 4.5rem;
 }
 
-.gyoza {
+.gyozaOrder {
     width: 18rem;
     border: 2px solid black;
     margin-left: 64.5rem;
-    margin-top: -25.5rem;
+    margin-top: -30.13rem;
 }
-.gyozaDescription {
+.gyozaDescriptionOrder {
     height: 4.5rem;
 }
 
-.takoyaki {
+.takoyakiOrder {
     width: 18rem;
     border: 2px solid black;
     margin-left: 85.6rem;
-    margin-top: -25.6rem;
+    margin-top: -30.13rem;
 }
-.takoyakiDescription {
+.takoyakiDescriptionOrder {
     height: 4.5rem;
+}
+
+
+.btn-primary {
+background-color: rgb(43, 41, 41);
+}
+
+svg {
+    width:30px;
+}
+
+.iconCart {
+    margin-top: -20rem;
+    
+}
+
+.iconCart span {
+    display:flex;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
 }
