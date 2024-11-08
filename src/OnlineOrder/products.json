@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Miso Ramen",
+        "price": 15,
+        "image": "/Restaurant-src/MenuRamen1.jpg"
+    },
+
+    {
+        "id": 2,
+        "name": "Shio Ramen",
+        "price": 15.99,
+        "image": "/Restaurant-src/MenuRamen2.jpg"
+    },
+
+    {
+        "id": 3,
+        "name": "Spicy Chicken Ramen",
+        "price": 13.99,
+        "image": "/Restaurant-src/MenuRamen3.jpg"
+    },
+
+    {
+        "id": 4,
+        "name": "Spicy Tonkotsu Ramen",
+        "price": 15.99,
+        "image": "/Restaurant-src/MenuRamen4.jpg"
+    },
+
+    {
+        "id": 5,
+        "name": "Wonton Chicken Ramen",
+        "price": 13.99,
+        "image": "/Restaurant-src/MenuRamen5.jpg"
+    },
+
+    {
+        "id": 6,
+        "name": "Edamame",
+        "price": 3.99,
+        "image": "/Restaurant-src/MenuEdamame.jpg"
+    },
+
+    {
+        "id": 7,
+        "name": "Salmon",
+        "price": 11,
+        "image": "/Restaurant-src/MenuSalmon.jpg"
+    },
+
+    {
+        "id": 8,
+        "name": "Steamed Buns",
+        "price": 7.99,
+        "image": "/Restaurant-src/MenuSteamedBuns.jpg"
+    },
+
+    {
+        "id": 9,
+        "name": "Gyoza",
+        "price": 7.99,
+        "image": "/Restaurant-src/MenuGyoza.jpg"
+    },
+
+    {
+        "id": 10,
+        "name": "Takoyaki",
+        "price": 8.99,
+        "image": "/Restaurant-src/MenuTakoyaki.jpg"
+    }
+
+]
