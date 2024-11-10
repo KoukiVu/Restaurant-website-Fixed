@@ -1,210 +1,205 @@
-.Order {
+/* General Container Styling */
+.order-menu .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .Order {
     text-align: center; 
     font-size: 4rem;
     margin-top: 2%;
-}
-
-.container {
+  }
+  
+  .RamenTitle,
+  .SmallPlatesTitle {
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+  
+  /* Product List Styling */
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product-item {
+    width: 250px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .product-image {
     width: 100%;
-    height: 100%;
-    margin: auto;
-    transition: transform .5s;
-}
-
-/* RAMEN */
-
-.misoRamenOrder {
-    width: 18rem;
-    border: 2px solid black;
-    margin-left: 2rem;
-}
-
-.shioRamenOrder {
-    width: 18rem;
-    margin-left: 23rem;
-    margin-top: -30.13rem;
-    border: 2px solid black;
-}
-
-.spicyChickenRamenOrder {
-    width: 18rem;
-    margin-left: 43.6rem;
-    margin-top: -30.13rem;
-    border: 2px solid black;
-}
-
-.spicyTonkotsuRamenOrder {
-    width: 18rem;
-    margin-left: 64.5rem;
-    margin-top: -30.13rem;
-    border: 2px solid black;
-}
-
-.wontonChickenRamenOrder {
-    width: 18rem;
-    margin-left: 85.6rem;
-    margin-top: -30.13rem;
-    border: 2px solid black;
-}
-
-/* SMALL PLATES */
-
-.edamameOrder {
-    width: 18rem;
-    border: 2px solid black;
-    margin-left: 2rem;
-}
-.edamameDescriptionOrder {
-    height: 4.5rem;
-
-}
-
-.salmonOrder {
-    width: 18rem;
-    border: 2px solid black;
-    margin-left: 23rem;
-    margin-top: -30.13rem;
-}
-.salmonDescriptionOrder {
-    height: 4.5rem;
-}
-
-.bunsOrder {
-    width: 18rem;
-    border: 2px solid black;
-    margin-left: 43.6rem;
-    margin-top: -30.13rem;
-}
-.bunsDescriptionOrder {
-    height: 4.5rem;
-}
-
-.gyozaOrder {
-    width: 18rem;
-    border: 2px solid black;
-    margin-left: 64.5rem;
-    margin-top: -30.13rem;
-}
-.gyozaDescriptionOrder {
-    height: 4.5rem;
-}
-
-.takoyakiOrder {
-    width: 18rem;
-    border: 2px solid black;
-    margin-left: 85.6rem;
-    margin-top: -30.13rem;
-}
-.takoyakiDescriptionOrder {
-    height: 4.5rem;
-}
-
-
-.btn-primary {
-background-color: rgb(43, 41, 41);
-}
-
-svg {
-    width:30px;
-}
-
-.iconCart {
-  margin-left: 99rem;
-  margin-top: -155rem;
-  width:50px;
-  height:50px;
-}
-
-.icon-cart span {
-    display:flex;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .Flavour {
+    padding: 10px;
+  }
+  
+  .Flavour h5 {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
+  .Flavour p {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Cart Icon */
+  .icon-cart {
+    position: fixed;
+    top: 90px;
+    right: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-cart svg {
     width: 30px;
     height: 30px;
-    background-color: red;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  }
+  
+  .icon-cart span {
+    background: red;
+    color: #fff;
     border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    margin-top: -23rem;
-    margin-left: 101rem;
-}
-
-.cartTab {
-    width: 400px;
-    background-color: black;
-    color: white;
+    padding: 3px 8px;
+    margin-left: 6px;
+    font-size: 0.8em;
+  }
+  
+  /* Cart Overlay */
+  .cartTab {
     position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
-    inset: 0 -400px 0 auto;
-    display: grid;
-    grid-template-rows: 70px 1fr 70px;
-    transition: .5s;
-}
-
-.showCart .cartTab{
-    inset: 0 0 0 auto;
-}
-
-.showCart .container {
-    transform: translateX(-250px);
-}
-.cartTab h1{
+    width: 350px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    margin: 0;
-    font-weight: 300;
-
-}
-
-.cartTab .btn{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);;
-}
-
-.cartTab .btn button{
-    background-color: yellow;
-    border: none;
-    font-family: Poppins;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.cartTab .btn .close{
-    background-color: white;
-}
-
-.cartTab .listCart .item img{
-    width:100%;
-}
-
-.cartTab .listCart .item{
-    display: grid;
-    grid-template-columns: 70px 150px 50px 1fr;
-    gap: 10px;
-    text-align:center;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+  }
+  
+  .cartTab h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .listCart {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
     align-items: center;
-}
-
-.listCart .quantity span{
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-color: white;
-    color: black;
-    border-radius: 50%;
-}
-
-.listCart .quantity span:nth-child(2) {
-    background-color: transparent;
-    color: white;
-}
-
-.listCart .item:nth-child(even) {
-    background-color: #eee1;
-}
-
-.listCart{
-    overflow: auto;
-}
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item .image img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .cart-item .name {
+    flex: 1;
+  }
+  
+  .totalPrice {
+    font-size: 1em;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity .minus,
+  .quantity .plus {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 4px;
+    margin: 0 5px;
+    transition: background 0.3s;
+  }
+  
+  .quantity .minus:hover,
+  .quantity .plus:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Close and Checkout Buttons */
+  .btn .close,
+  .btn .checkOut {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn .close {
+    background: #333;
+    color: #fff;
+  }
+  
+  .btn .close:hover {
+    background: #555;
+  }
+  
+  .btn .checkOut {
+    background: #28a745;
+    color: #fff;
+  }
+  
+  .btn .checkOut:hover {
+    background: #218838;
+  }
+  
