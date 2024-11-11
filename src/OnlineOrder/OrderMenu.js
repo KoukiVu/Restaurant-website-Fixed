@@ -1,23 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import '../css/orderMenu.css';
 import axios from 'axios';
+import productsData from './products.json';
 
 export default function OrderMenu() {
-  const [listProducts, setListProducts] = useState([]);
+  const [listProducts, setListProducts] = useState(productsData);
   const [cart, setCart] = useState([]);
   const [showCart, setShowCart] = useState(false);
 
-  // Fetch products data
   useEffect(() => {
-    axios.get('/products.json')  // Ensure this path is correct
+    axios.get('/products.json')  
       .then(response => setListProducts(response.data))
       .catch(error => console.error("Error fetching product data:", error));
   }, []);
 
-  // Toggle cart visibility
   const toggleCart = () => setShowCart(!showCart);
 
-  // Add product to cart
   const addToCart = (product) => {
     setCart(prevCart => {
       const existingProductIndex = prevCart.findIndex(item => item.product_id === product.id);
@@ -28,10 +26,9 @@ export default function OrderMenu() {
       } else {
         return [...prevCart, { product_id: product.id, name: product.name, price: product.price, quantity: 1, image: product.image }];
       }
-    });
+    });  
   };
 
-  // Update quantity in cart
   const updateQuantity = (product_id, amount) => {
     setCart(prevCart => 
       prevCart.map(item => item.product_id === product_id 
@@ -39,6 +36,10 @@ export default function OrderMenu() {
         : item
       )
     );
+  };
+
+  const removeFromCart = (product_id) => {
+    setCart(prevCart => prevCart.filter(item => item.product_id !== product_id));
   };
 
   return (
@@ -87,6 +88,12 @@ export default function OrderMenu() {
                     <span>{item.quantity}</span>
                     <button className="plus" onClick={() => updateQuantity(item.product_id, 1)}>+</button>
                   </div>
+                  <button className="remove" onClick={() => removeFromCart(item.product_id)}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-trash" viewBox="0 0 16 16">
+                      <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                      <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                    </svg>
+                  </button>
                 </div>
               ))}
             </div>
