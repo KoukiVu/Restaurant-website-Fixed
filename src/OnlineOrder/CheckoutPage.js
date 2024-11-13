@@ -1,17 +1,8 @@
 import React, { useState } from 'react';
-import './App.css';
+import '../css/checkout.css';
 import axios from 'axios';
-import NavBar from "./NavBar"
-import Footer from "./Footer"
-import About from './Pages/About'
-import Menu from './Pages/Menu'
-import Home from './Pages/Home'
-import Order from './OnlineOrder/OrderMenu'
-import Checkout from './OnlineOrder/CheckoutPage'
-import Reservation from './Pages/ReservationHome'
-import { Route, Routes } from "react-router-dom"
 
-function App() {
+export default function CheckoutPage() {
   // Use state to track the form values
   const [food, setFood] = useState('');
   const [drink, setDrink] = useState('');
@@ -43,32 +34,12 @@ function App() {
     .catch(error => {
       console.error('Error submitting order:', error);
     });
-
-    
 };
+
+
   return (
-   
- <div>
-      <>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Menu" element={<Menu />} />
-        
-      </Routes>
-
-      <Routes>
-          <Route path="/OrderMenu" element={<Order />} />
-          <Route path="/CheckoutPage" element={<Checkout />}/>
-          <Route path="/reservation" element={<Reservation />} />
-      </Routes>
-      </>
-
-      <Footer />
-
- 
-{/* <div>
+    <div>
+        <h1 className="Checkout">Checkout</h1>
       <form className="row g-3" onSubmit={handleSubmit}>
         <div className="col-md-6">
           <label htmlFor="food">Select Food:</label>
@@ -124,6 +95,7 @@ function App() {
             <option value="CA">California</option>
             <option value="TX">Texas</option>
             <option value="FL">Florida</option>
+            {/* Add more states as needed */}
           </select>
         </div>
 
@@ -153,10 +125,8 @@ function App() {
           <button type="submit" className="btn btn-primary">Order</button>
         </div>
       </form>
-    </div> */}
-    
- </div>
+    </div>
   );
 }
 
-export default App;
+

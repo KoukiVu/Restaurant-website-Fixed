@@ -173,8 +173,7 @@
   }
   
   /* Close and Checkout Buttons */
-  .btn .close,
-  .btn .checkOut {
+  .btn .close{
     width: 100%;
     padding: 10px;
     margin: 5px 0;
@@ -193,12 +192,25 @@
     background: #555;
   }
   
-  .btn .checkOut {
-    background: #28a745;
+  .checkOut {
+    background: #b82e03;
     color: #fff;
+    text-decoration: none;
+  }
+
+  .nav-item {
+    list-style-type: none;
+    width: 100%;
+    height:100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
   }
   
   .btn .checkOut:hover {
-    background: #218838;
+    background: #c76204;
   }
   

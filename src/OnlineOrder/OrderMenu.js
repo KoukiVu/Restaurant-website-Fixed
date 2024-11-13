@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import '../css/orderMenu.css';
 import axios from 'axios';
 import productsData from './products.json';
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
+
+
 
 export default function OrderMenu() {
   const [listProducts, setListProducts] = useState(productsData);
@@ -99,11 +102,23 @@ export default function OrderMenu() {
             </div>
             <div className="btn">
               <button className="close" onClick={toggleCart}>CLOSE</button>
-              <button className="checkOut">CHECK OUT</button>
+              <CustomLink className="checkOut" to="/checkoutPage">CHECK OUT</CustomLink>
             </div>
           </div>
         )}
       </div>
     </div>
   );
+}
+
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end:true })
+  return (
+    <li className={`nav-item ${isActive ? "active" : ""}`}>
+          <Link to={to} {...props}>
+          {children}
+          </Link>
+      </li>
+  )
 }

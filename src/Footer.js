@@ -12,7 +12,8 @@ const Footer = () => {
                         <ul className="list-unstyled">
                             <li>123-456-7890</li>
                             <li>Full Sail University</li>
-                            <li>3300 Winter Park</li>
+                            <li>3300 University Blvd,</li>
+                            <li>Winter Park, FL 32792</li>
                         </ul>
                     </div>
                     {/* Column 2 */}

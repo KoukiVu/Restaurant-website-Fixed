@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Miso Ramen",
-        "price": 15,
+        "price": 15.00,
         "image": "/Restaurant-src/MenuRamen1.jpg",
         "description": "Ramen cooked with miso broth, fresh vegetables, Bok Choy, Chashu Pork, Nitamago(Egg)"
     },
@@ -51,7 +51,7 @@
     {
         "id": 7,
         "name": "Salmon",
-        "price": 11,
+        "price": 11.00,
         "image": "/Restaurant-src/MenuSalmon.jpg",
         "description": "Fresh salmon with soysauce fused with Jalapeno"
     },

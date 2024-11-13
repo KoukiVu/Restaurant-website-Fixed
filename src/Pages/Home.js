@@ -10,6 +10,7 @@ export default function home() {
             <div>
                <h1 className="Name">NANA RAMEN</h1>
                <CustomLink className="onlineOrd" to="/orderMenu">Order Online</CustomLink>
+               <CustomLink className="onlineOrd" to="/reservation">Reservation</CustomLink>
             </div>
 
             <hr className="section" />
@@ -34,13 +35,13 @@ export default function home() {
     }
 
     function CustomLink({ to, children, ...props }) {
-      const resolvedPath = useResolvedPath(to)
-      const isActive = useMatch({ path: resolvedPath.pathname, end:true })
-      return (
-          <li className={isActive ? "active" : ""}>
-              <Link to={to} {...props}>
-              {children}
-              </Link>
-          </li>
-      )
-  }
+        const resolvedPath = useResolvedPath(to)
+        const isActive = useMatch({ path: resolvedPath.pathname, end:true })
+        return (
+          <li className={`nav-item ${isActive ? "active" : ""}`}>
+                <Link to={to} {...props}>
+                {children}
+                </Link>
+            </li>
+        )
+      }
