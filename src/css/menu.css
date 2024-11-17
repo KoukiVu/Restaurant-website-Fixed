@@ -15,6 +15,13 @@
     margin-left: 2.2rem;
 }
 
+
+.ramenItem {
+    width: 18rem;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
 /* RAMEN */
 
 .misoRamen {
@@ -26,28 +33,28 @@
 .shioRamen {
     width: 18rem;
     margin-left: 23rem;
-    margin-top: -25.5rem;
+    margin-top: -25.97rem;
     border: 2px solid black;
 }
 
 .spicyChickenRamen {
     width: 18rem;
     margin-left: 43.6rem;
-    margin-top: -25.5rem;
+    margin-top: -26rem;
     border: 2px solid black;
 }
 
 .spicyTonkotsuRamen {
     width: 18rem;
     margin-left: 64.5rem;
-    margin-top: -25.5rem;
+    margin-top: -26rem;
     border: 2px solid black;
 }
 
 .wontonChickenRamen {
     width: 18rem;
     margin-left: 85.6rem;
-    margin-top: -25.5rem;
+    margin-top: -26rem;
     border: 2px solid black;
 }
 
@@ -72,7 +79,7 @@
     width: 18rem;
     border: 2px solid black;
     margin-left: 23rem;
-    margin-top: -25.5rem;
+    margin-top: -26.5rem;
 }
 .salmonDescription {
     height: 4.5rem;
@@ -82,7 +89,7 @@
     width: 18rem;
     border: 2px solid black;
     margin-left: 43.6rem;
-    margin-top: -25.5rem;
+    margin-top: -26.4rem;
 }
 .bunsDescription {
     height: 4.5rem;
@@ -92,7 +99,7 @@
     width: 18rem;
     border: 2px solid black;
     margin-left: 64.5rem;
-    margin-top: -25.5rem;
+    margin-top: -26.44rem;
 }
 .gyozaDescription {
     height: 4.5rem;
@@ -102,7 +109,7 @@
     width: 18rem;
     border: 2px solid black;
     margin-left: 85.6rem;
-    margin-top: -25.6rem;
+    margin-top: -26.44rem;
 }
 .takoyakiDescription {
     height: 4.5rem;

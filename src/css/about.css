@@ -5,6 +5,7 @@
     text-align: center; 
     font-size: 4rem;
     margin-top: 2%;
+    
 }
 
 .aboutElement {
@@ -30,7 +31,7 @@
     border: 4px solid black;
     display:block;
     margin-left: auto;
-    margin-top: -430px;
+    margin-top: -421px;
 }
   
 .imageAbout3 {
@@ -38,5 +39,5 @@
     border: 4px solid black;
     display:block;
     margin-right: auto;
-    margin-top: -420px;
+    margin-top: -425px;
 }

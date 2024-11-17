@@ -7,6 +7,7 @@ export default function ReservationHome() {
   const [table, setTable] = useState('');
   const [time, setTime] = useState('');
   const [people, setPeople] = useState('');
+  const [phone, setPhone] = useState('');
   const [firstName, setFName] = useState('');
   const [lastName, setLName] = useState('');
 
@@ -72,17 +73,33 @@ export default function ReservationHome() {
             id="inputPeople"
             className="form-select"
             value={people}
-            onChange={(e) => setPeople(e.target.value)}
-          >
+            onChange={(e) => setPeople(e.target.value)}>
             <option value="">Choose...</option>
             <option>1</option>
             <option>2</option>
             <option>3</option>
             <option>4</option>
             <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
           </select>
         </div>
 
+        <div className="phoneNum">
+          <label htmlFor="inputPhoneNum" className="form-label">Phone Number</label>
+          <input
+            type="text"
+            className="form-control"
+            id="inputApt"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+          />
+        </div>
+
+        
 
         <div className="col-12">
           <button type="submit" className="btn btn-primary">Reserve</button>

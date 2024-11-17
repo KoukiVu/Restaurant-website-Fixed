@@ -4,13 +4,14 @@ import axios from 'axios';
 
 export default function CheckoutPage() {
   // Use state to track the form values
-  const [food, setFood] = useState('');
-  const [drink, setDrink] = useState('');
+  const [orderName, setOrderName] = useState('');
   const [address, setAddress] = useState('');
   const [city, setCity] = useState('');
   const [state, setState] = useState('');
   const [apt, setApt] = useState('');
   const [zip, setZip] = useState('');
+  const [firstName, setFName] = useState('');
+  const [lastName, setLName] = useState('');
 
   // Handle form submission
   const handleSubmit = (event) => {
@@ -18,13 +19,14 @@ export default function CheckoutPage() {
 
     // Create order data from state values
     const orderData = {
-      food: food,
-      drink: drink,
+      orderName: orderName,
       address: address,
       city: city,
       state: state,
       apt: apt,
       zip: zip,
+      firstName: firstName,
+      lastName: lastName,
     };
 
   axios.post('http://localhost:5000/submit-order', orderData)
@@ -41,24 +43,17 @@ export default function CheckoutPage() {
     <div>
         <h1 className="Checkout">Checkout</h1>
       <form className="row g-3" onSubmit={handleSubmit}>
-        <div className="col-md-6">
-          <label htmlFor="food">Select Food:</label>
-          <select id="food" name="food" value={food} onChange={(e) => setFood(e.target.value)}>
-            <option value="pizza">Pizza</option>
-            <option value="burger">Burger</option>
-            <option value="pasta">Pasta</option>
-          </select>
+         
+         <h2 class="orderInfo">Address information</h2>
+      <div class="input-group">
+           <span class="input-group-text">Name for order</span>
+          <input type="text" aria-label="First name" class="form-control" 
+          value={orderName}
+          onChange={(e) => setOrderName(e.target.value)}/>
+
         </div>
 
-        <div className="col-md-6">
-          <label htmlFor="drink">Select Drink:</label>
-          <select id="drink" name="drink" value={drink} onChange={(e) => setDrink(e.target.value)}>
-            <option value="coke">Coke</option>
-            <option value="water">Water</option>
-            <option value="juice">Juice</option>
-          </select>
-        </div>
-
+        
         <div className="col-12">
           <label htmlFor="inputAddress" className="form-label">Address</label>
           <input
@@ -119,6 +114,19 @@ export default function CheckoutPage() {
             value={zip}
             onChange={(e) => setZip(e.target.value)}
           />
+        </div>
+        
+        <h2 class="cardInfo">Card information</h2>
+
+        <div class="input-group">
+           <span class="input-group-text">First and last name</span>
+          <input type="text" aria-label="First name" class="form-control" 
+          value={firstName}
+          onChange={(e) => setFName(e.target.value)}/>
+
+          <input type="text" aria-label="Last name" class="form-control"
+          value={lastName} 
+          onChange={(e) => setLName(e.target.value)}/>
         </div>
 
         <div className="col-12">

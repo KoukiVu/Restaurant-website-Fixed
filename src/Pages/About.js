@@ -13,8 +13,8 @@ export default function about() {
 
          <div>
       <img className="imageAbout1" src="/Restaurant-src/about1ramen.jpg"></img>
-      <img className="imageAbout2" src="/Restaurant-src/about1ramen.jpg"></img>
-      <img className="imageAbout3" src="/Restaurant-src/about1ramen.jpg"></img>
+      <img className="imageAbout2" src="/Restaurant-src/MenuRamen1.jpg"></img>
+      <img className="imageAbout3" src="/Restaurant-src/MenuRamen2.jpg"></img>
 
 
           </div>
