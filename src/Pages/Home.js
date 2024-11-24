@@ -38,7 +38,8 @@ export default function home() {
 
             <div className="MenuHome">
                 <h1 className="Menu">Menu</h1>
-                  {/* RAMEN MENU */}
+
+     {/* RAMEN MENU */}
 <div>
      <h2 className="RamenTitle">Ramen</h2>
       {/* Miso Ramen */}

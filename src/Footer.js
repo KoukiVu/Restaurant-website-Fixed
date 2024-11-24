@@ -20,8 +20,8 @@ const Footer = () => {
                     <div className="col">
                         <h4 className="storeHours">Store Hours</h4>
                         <ul className="list-unstyled">
-                            <li>Monday - Friday</li>
-                            <li>Friday & Sunday</li>
+                            <li className="day">Monday - Friday</li>
+                            <li className="day">Friday & Sunday</li>
                         </ul>
                     </div>
                 </div>

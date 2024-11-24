@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../css/checkout.css';
 import axios from 'axios';
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
+
 
 export default function CheckoutPage() {
   // Use state to track the form values
@@ -130,11 +132,46 @@ export default function CheckoutPage() {
         </div>
 
         <div className="col-12">
+          <label htmlFor="inputCardNum" className="form-label">Card Number</label>
+          <input
+            type="text"
+            className="form-control"
+            id="inputAddress"
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
+          />
+        </div>
+
+        <div className="col-12">
+          <label htmlFor="inputCvv" className="form-label">CVV</label>
+          <input
+            type="text"
+            className="form-control"
+            id="inputAddress"
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
+          />
+        </div>
+
+        <div className="col-12">
           <button type="submit" className="btn btn-primary">Order</button>
+          <CustomLink className="goBack" to="/OrderMenu">Go back</CustomLink>
         </div>
       </form>
     </div>
   );
+}
+
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end:true })
+  return (
+    <li className={`nav-item ${isActive ? "active" : ""}`}>
+          <Link to={to} {...props}>
+          {children}
+          </Link>
+      </li>
+  )
 }
 
 
