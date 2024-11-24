@@ -14,6 +14,8 @@ export default function CheckoutPage() {
   const [zip, setZip] = useState('');
   const [firstName, setFName] = useState('');
   const [lastName, setLName] = useState('');
+  const [cardNumber, setCardNumber] = useState('');
+  const [cvv, setCvv] = useState('');
 
   // Handle form submission
   const handleSubmit = (event) => {
@@ -131,32 +133,37 @@ export default function CheckoutPage() {
           onChange={(e) => setLName(e.target.value)}/>
         </div>
 
-        <div className="col-12">
-          <label htmlFor="inputCardNum" className="form-label">Card Number</label>
-          <input
-            type="text"
-            className="form-control"
-            id="inputAddress"
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
-          />
-        </div>
+        <div className="row g-2">
+  <div className="col-md-6">
+    <label htmlFor="inputCardNum" className="form-label">    Card Number</label>
+    <input
+      type="text"
+      className="form-control"
+      id="inputCardNum"
+      value={cardNumber}
+      onChange={(e) => setCardNumber(e.target.value)}
+    />
+  </div>
 
-        <div className="col-12">
-          <label htmlFor="inputCvv" className="form-label">CVV</label>
-          <input
-            type="text"
-            className="form-control"
-            id="inputAddress"
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
-          />
-        </div>
+  <div className="col-md-6">
+    <label htmlFor="inputCvv" className="form-label">CVV</label>
+    <input
+      type="text"
+      className="form-control"
+      id="inputCvv"
+      value={cvv}
+      onChange={(e) => setCvv(e.target.value)}
+    />
+  </div>
 
-        <div className="col-12">
-          <button type="submit" className="btn btn-primary">Order</button>
-          <CustomLink className="goBack" to="/OrderMenu">Go back</CustomLink>
-        </div>
+</div>
+
+
+<div className="col-12 d-flex justify-content-between align-items-center">
+  <button type="submit" className="btn btn-primary">Order</button>
+  <CustomLink className="goBack" to="/OrderMenu">Go back</CustomLink>
+</div>
+
       </form>
     </div>
   );
